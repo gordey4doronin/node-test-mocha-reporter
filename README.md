@@ -1,3 +1,6 @@
+[![CI](https://github.com/gordey4doronin/node-test-mocha-reporter/actions/workflows/ci.yml/badge.svg)](https://github.com/gordey4doronin/node-test-mocha-reporter/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/node-test-mocha-reporter)](https://www.npmjs.com/package/node-test-mocha-reporter)
+
 # node-test-mocha-reporter
 
 A [custom reporter](https://nodejs.org/api/test.html#custom-reporters) for the Node.js built-in test runner (`node:test`) that prints results like mocha's default `spec` reporter. Zero dependencies.
