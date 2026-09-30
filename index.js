@@ -43,7 +43,9 @@ export default async function* reporter(source) {
       }
     }
 
-    if (type === 'test:pass' && data.details.type !== 'suite') {
+    // A skipped suite is reported without its tests,
+    // so it is listed as pending itself.
+    if (type === 'test:pass' && (data.details.type !== 'suite' || data.skip)) {
       yield* headers(data.nesting)
 
       if (data.skip || data.todo) {
