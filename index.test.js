@@ -74,7 +74,7 @@ describe('reporter', () => {
 `)
   })
 
-  it('shows skipped and todo tests as pending', async () => {
+  it('shows skipped and todo tests and suites as pending', async () => {
     const { code, output } = await run('pending.js')
 
     assert.equal(code, 0)
@@ -83,11 +83,15 @@ describe('reporter', () => {
     - is skipped
     - is todo
     - skips itself
+    - is a skipped suite
+    is a todo suite
+      - runs as todo
+      - runs as todo too
     ✔ passes
 
 
   1 passing (Nms)
-  3 pending
+  6 pending
 
 `)
   })
