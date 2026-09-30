@@ -1,6 +1,6 @@
 {
   "name": "node-test-mocha-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom reporter for the Node.js built-in test runner (node:test) that prints results like mocha's default spec reporter. Zero dependencies.",
   "type": "module",
   "exports": "./index.js",
